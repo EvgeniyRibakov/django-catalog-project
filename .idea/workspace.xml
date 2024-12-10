@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f4c0e6c-d47c-4ae0-90ea-57368a2f5aaa" name="Changes" comment="Initial commit: Переместил шаблоны">
+    <list default="true" id="5f4c0e6c-d47c-4ae0-90ea-57368a2f5aaa" name="Changes" comment="Initial commit: Изменил расположение файлов">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/newapp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/newapp/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/newapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/newapp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/newapp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/newapp/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/newapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/newapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/newapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/newapp/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/newapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/newapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/newapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/newapp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +91,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733491382085</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Initial commit: Изменил расположение файлов">
+      <option name="closed" value="true" />
+      <created>1733743178683</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733743178683</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,6 +117,7 @@
     <MESSAGE value="Initial commit: Добавил contact" />
     <MESSAGE value="Initial commit: Создал новую ветку" />
     <MESSAGE value="Initial commit: Переместил шаблоны" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit: Переместил шаблоны" />
+    <MESSAGE value="Initial commit: Изменил расположение файлов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit: Изменил расположение файлов" />
   </component>
 </project>
