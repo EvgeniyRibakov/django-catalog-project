@@ -4,8 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f4c0e6c-d47c-4ae0-90ea-57368a2f5aaa" name="Changes" comment="Initial commit: Изменил расположение файлов">
+    <list default="true" id="5f4c0e6c-d47c-4ae0-90ea-57368a2f5aaa" name="Changes" comment="Initial commit: Добавил urls в catalog">
+      <change afterPath="$PROJECT_DIR$/.env_sample" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/management/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/management/commands/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/management/commands/add_test_products.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/все категории.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newapp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newapp/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newapp/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newapp/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newapp/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newapp/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newapp/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,13 +57,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop-1&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.add_test_products.executor": "Run",
+    "Python.settings.executor": "Run",
+    "Python.urls.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "develop-1"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Acer\PycharmProjects\Homework django first\catalog\templates\catalog" />
@@ -99,8 +122,19 @@
       <option name="project" value="LOCAL" />
       <updated>1733743178683</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Initial commit: Добавил urls в catalog">
+      <option name="closed" value="true" />
+      <created>1733838817539</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733838817539</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -118,6 +152,7 @@
     <MESSAGE value="Initial commit: Создал новую ветку" />
     <MESSAGE value="Initial commit: Переместил шаблоны" />
     <MESSAGE value="Initial commit: Изменил расположение файлов" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit: Изменил расположение файлов" />
+    <MESSAGE value="Initial commit: Добавил urls в catalog" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit: Добавил urls в catalog" />
   </component>
 </project>
