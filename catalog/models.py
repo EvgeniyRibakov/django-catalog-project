@@ -5,6 +5,7 @@ from django.core.validators import MaxValueValidator
 class Product(models.Model):
     """Cодержит пoля наиmенoвание, oписание, изображение, категория,
      цена за покупку,дата создания,дата последнего изменения."""
+    objects = None
     name = models.CharField(
         max_length=100,
         verbose_name="Название продукта",
