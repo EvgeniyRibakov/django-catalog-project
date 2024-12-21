@@ -4,9 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f4c0e6c-d47c-4ae0-90ea-57368a2f5aaa" name="Changes" comment="Initial commit: 24 first commit">
-      <change afterPath="$PROJECT_DIR$/static/js/color-modes.js" afterDir="false" />
+    <list default="true" id="5f4c0e6c-d47c-4ae0-90ea-57368a2f5aaa" name="Changes" comment="Initial commit: 24 second commit">
+      <change afterPath="$PROJECT_DIR$/catalog/migrations/0002_product_views_counter_alter_product_price.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/templates/catalog/product_confirm_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/templates/catalog/product_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/templates/catalog/product_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/blog/image/vertical-shot-crowded-soccer-stadium-cloudy-sky.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unusual/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unusual/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unusual/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unusual/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unusual/templates/blog/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unusual/templates/blog/blog_confirm_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unusual/templates/blog/blog_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unusual/templates/blog/blog_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unusual/templates/blog/blog_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unusual/templates/blog/includes/inc_menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unusual/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unusual/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unusual/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/Includes/inc_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/Includes/inc_menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/product_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/product_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/product_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,15 +76,22 @@
     "Python.settings.executor": "Run",
     "Python.urls.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "develop-1"
+    "git-widget-placeholder": "develop-1",
+    "last_opened_file_path": "C:/Users/Acer/PycharmProjects/Homework django first/unusual",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Acer\PycharmProjects\Homework django first\unusual" />
+      <recent name="C:\Users\Acer\PycharmProjects\Homework django first\media\blog\image" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Acer\PycharmProjects\Homework django first\static\css" />
+      <recent name="C:\Users\Acer\PycharmProjects\Homework django first\media\blog\image" />
       <recent name="C:\Users\Acer\PycharmProjects\Homework django first\catalog\templates\catalog" />
+      <recent name="C:\Users\Acer\PycharmProjects\Homework django first\catalog\templates" />
+      <recent name="C:\Users\Acer\PycharmProjects\Homework django first\static\css" />
       <recent name="C:\Users\Acer\PycharmProjects\Homework django first" />
-      <recent name="C:\Users\Acer\PycharmProjects\Homework django first\catalog" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -123,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734609656342</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Initial commit: 24 second commit">
+      <option name="closed" value="true" />
+      <created>1734616851650</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1734616851650</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -148,6 +191,7 @@
     <MESSAGE value="Initial commit: Изменил расположение файлов" />
     <MESSAGE value="Initial commit: Добавил urls в catalog" />
     <MESSAGE value="Initial commit: 24 first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit: 24 first commit" />
+    <MESSAGE value="Initial commit: 24 second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit: 24 second commit" />
   </component>
 </project>
