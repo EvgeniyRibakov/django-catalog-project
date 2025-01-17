@@ -1,0 +1,13 @@
+<!-- catalog/templates/catalog/product_form.html -->
+{% extends 'catalog/base.html' %}
+
+{% block content %}
+<div class="container">
+    <h2 class="my-4">Добавить продукт</h2>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}  <!-- Выводим форму -->
+        <button type="submit" class="btn btn-primary">Отправить</button>
+    </form>
+</div>
+{% endblock %}
