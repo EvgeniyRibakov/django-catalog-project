@@ -1,8 +1,9 @@
 {% load static %}
+
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
 <head>
-    <script src="{%static 'js/color-modes.js' %}"></script>
+    <script src="{% static 'js/color-modes.js' %}"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +13,6 @@
     <title>Album example · Bootstrap v5.3</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
-
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
@@ -25,7 +25,6 @@
     <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
     <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
     <meta name="theme-color" content="#712cf9">
-
 
     <style>
         .bd-placeholder-img {
@@ -105,7 +104,6 @@
           display: block !important;
         }
     </style>
-
 
 </head>
 <body>
@@ -192,8 +190,46 @@
         </div>
     </section>
 
-    {%block content%}
-    {%endblock%}
+    {% block content %}
+    <h1>{% if object %}Редактировать{% else %}Добавить{% endif %} продукт</h1>
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="id_name">Название</label>
+            {{ form.name }}
+        </div>
+
+        <div class="form-group">
+            <label for="id_description">Описание</label>
+            {{ form.description }}
+        </div>
+
+        <div class="form-group">
+            <label for="id_image">Изображение</label>
+            {{ form.image }}
+        </div>
+
+        <div class="form-group">
+            <label for="id_category">Категория</label>
+            {{ form.category }}
+        </div>
+
+        <div class="form-group">
+            <label for="id_price">Цена</label>
+            {{ form.price }}
+            {% if form.price.errors %}
+            <div class="text-danger">
+                {% for error in form.price.errors %}
+                <p>{{ error }}</p>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+
+        <button type="submit" class="btn btn-primary">Сохранить</button>
+    </form>
+    {% endblock %}
 </main>
 
 <footer class="text-body-secondary py-5">

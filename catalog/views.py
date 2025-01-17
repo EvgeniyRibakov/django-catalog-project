@@ -1,46 +1,52 @@
+# views.py
 from django.urls import reverse_lazy, reverse
-
-from catalog.models import Product
 from django.views.generic import ListView, DetailView, TemplateView, CreateView, UpdateView, DeleteView
+from catalog.forms import ProductForms  # Исправлена ошибка в импорте
+from catalog.models import Product
 
 
+# Главная страница
 class HomeTemplateView(TemplateView):
     template_name = 'catalog/home.html'
 
 
+# Страница контактов
 class ContactTemplateView(TemplateView):
     template_name = 'catalog/contacts.html'
 
 
+# Просмотр списка продуктов
 class ProductListView(ListView):
     model = Product
+    template_name = 'catalog/product_list.html'
 
 
+# Детали продукта
 class ProductDetailView(DetailView):
     model = Product
-
-    def get_object(self, queryset=None):
-        self.object = super().get_object(queryset)
-        self.object.views_counter += 1
-        self.object.save()
-        return self.object
+    template_name = 'catalog/product_detail.html'
 
 
+# Создание нового продукта
 class ProductCreateView(CreateView):
     model = Product
-    fields = ("name", "description", "image", "category", "price", "created_at", "updated_at")
+    form_class = ProductForms
+    template_name = 'catalog/product_form.html'
     success_url = reverse_lazy('catalog:product_list')
 
 
+# Обновление продукта
 class ProductUpdateView(UpdateView):
     model = Product
-    fields = ("name", "description", "image", "category", "price", "created_at", "updated_at")
-    success_url = reverse_lazy('catalog:product_list')
+    form_class = ProductForms
+    template_name = 'catalog/product_form.html'
 
     def get_success_url(self):
-        return reverse('catalog:product_detail', args=[self.kwargs.get('pk')])
+        return reverse_lazy('catalog:product_list')
 
 
+# Удаление продукта
 class ProductDeleteView(DeleteView):
     model = Product
+    template_name = 'catalog/product_confirm_delete.html'
     success_url = reverse_lazy('catalog:product_list')
