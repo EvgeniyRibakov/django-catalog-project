@@ -15,6 +15,12 @@
         <a class="p-2 btn btn-outline-primary" href="/contacts/">Контакты</a>
         <a class="p-2 btn btn-outline-primary" href="/blog/blog_list/">Блоги</a>
         <a class="p-2 btn btn-outline-primary" href="/">Главная</a>
+        {% if user.is_authenticated %}
+            <a class="p-2 btn btn-outline-primary" href="{% url 'users:logout' %}">Выход</a>
+        {% else %}
+            <a class="p-2 btn btn-outline-primary" href="{% url 'users:login' %}">Вход</a>
+            <a class="p-2 btn btn-outline-primary" href="{% url 'users:register' %}">Зарегистрироваться</a>
+        {% endif %}
     </nav>
 </div>
 
