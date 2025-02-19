@@ -5,27 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f4c0e6c-d47c-4ae0-90ea-57368a2f5aaa" name="Changes" comment="Initial commit: 26.1 first check">
-      <change afterPath="$PROJECT_DIR$/catalog/migrations/0003_remove_product_views_counter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/migrations/0004_product_owner_alter_product_image_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/templates/users/user_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env_sample" beforeDir="false" afterPath="$PROJECT_DIR$/.env_sample" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/migrations/0005_alter_product_options.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/management/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/management/commands/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/management/commands/csu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/templates/blog/includes/inc_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/includes/inc_menu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/management/commands/add_test_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/management/commands/csu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/Includes/inc_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/Includes/inc_menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/product_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/product_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/product_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -80,11 +74,11 @@
       <recent name="C:\Users\Acer\PycharmProjects\Homework django first\media\blog\image" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Acer\PycharmProjects\Homework django first\users\templates" />
+      <recent name="C:\Users\Acer\PycharmProjects\Homework django first\users\templates\users" />
       <recent name="C:\Users\Acer\PycharmProjects\Homework django first\media\blog\image" />
       <recent name="C:\Users\Acer\PycharmProjects\Homework django first\catalog\templates\catalog" />
       <recent name="C:\Users\Acer\PycharmProjects\Homework django first\catalog\templates" />
-      <recent name="C:\Users\Acer\PycharmProjects\Homework django first\static\css" />
-      <recent name="C:\Users\Acer\PycharmProjects\Homework django first" />
     </key>
   </component>
   <component name="SharedIndexes">

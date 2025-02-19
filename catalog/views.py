@@ -1,8 +1,9 @@
 # views.py
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.core.exceptions import PermissionDenied
 from django.urls import reverse_lazy, reverse
 from django.views.generic import ListView, DetailView, TemplateView, CreateView, UpdateView, DeleteView
-from catalog.forms import ProductForms  # Исправлена ошибка в импорте
+from catalog.forms import ProductForms, ProductModeratorForms  # Исправлена ошибка в импорте
 from catalog.models import Product
 
 
@@ -44,13 +45,21 @@ class ProductCreateView(CreateView, LoginRequiredMixin):
 
 
 # Обновление продукта
-class ProductUpdateView(UpdateView):
+class ProductUpdateView(LoginRequiredMixin, UpdateView):
     model = Product
     form_class = ProductForms
     template_name = 'catalog/product_form.html'
 
     def get_success_url(self):
         return reverse_lazy('catalog:product_list')
+
+    def get_form_class(self):
+        user = self.request.user
+        if user == self.object.owner:
+            return ProductForms
+        if user.has_perm("catalog.can_edit_product") and user.has_perm("catalog.can_edit_descriptions"):
+            return ProductModeratorForms
+        raise PermissionDenied()
 
 
 # Удаление продукта
