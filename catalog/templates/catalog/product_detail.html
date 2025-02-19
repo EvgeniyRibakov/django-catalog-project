@@ -1,0 +1,14 @@
+<!-- product_detail.html -->
+{% extends 'catalog/base.html' %}
+
+{% block content %}
+<h1>{{ object.name }}</h1>
+<img src="{{ object.image.url }}" alt="{{ object.name }}">
+<p>{{ object.description }}</p>
+<p>Цена: {{ object.price }}</p>
+<p>Категория: {{ object.category }}</p>
+{% if perms.catalog.can_edit_product and perms.catalog.can_edit_description == catalog.owner %}
+<a href="{% url 'catalog:product_update' product.pk %}" class="btn btn-info">Редактировать</a>
+<a href="{% url 'catalog:product_delete' product.pk %}" class="btn btn-danger">Удалить</a>
+{% endif %}
+{% endblock %}

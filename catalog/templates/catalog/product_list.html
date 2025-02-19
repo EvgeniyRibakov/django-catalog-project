@@ -1,0 +1,37 @@
+{% extends 'catalog/base.html' %}
+
+{% block content %}
+
+<!-- Центрированная кнопка "Добавить продукт" -->
+<div class="text-center mb-4">
+    {% if user.is_authenticated %}
+    <a href="{% url 'catalog:product_create' %}" class="btn btn-primary">Добавить продукт</a>
+    {% endif %}
+</div>
+
+
+<!-- Контейнер для карточек продуктов с выравниванием по центру -->
+<div class="container">
+    <div class="row justify-content-center">
+        {% for product in object_list %}
+        <div class="col-md-3 mb-4">
+            <!-- Карточка продукта -->
+            <div class="card">
+                <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top"
+                     style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">{{ product.name }}</h5>
+                    <p class="card-text">{{ product.description|truncatewords:20 }}</p>
+                    <a href="{% url 'catalog:product_detail' product.pk %}" class="btn btn-info">Перейти</a>
+                    {% if perms.catalog.can_edit_product and perms.catalog.can_edit_description == catalog.owner %}
+                    <a href="{% url 'catalog:product_update' product.pk %}" class="btn btn-info">Редактировать</a>
+                    <a href="{% url 'catalog:product_delete' product.pk %}" class="btn btn-danger">Удалить</a>
+                    {% endif %}
+
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
