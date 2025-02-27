@@ -46,6 +46,18 @@ class Product(models.Model):
     owner = models.ForeignKey(User, verbose_name="Создатель", help_text="Укажите создателя", blank=True, null=True,
                               on_delete=models.SET_NULL)
 
+    PUBLICATION_STATUS = (
+        ('draft', 'Черновик'),
+        ('published', 'Опубликовано'),
+    )
+    status = models.CharField(
+        max_length=10,
+        choices=PUBLICATION_STATUS,
+        default='draft',
+        verbose_name="Статус публикации",
+        help_text="Укажите статус публикации продукта",
+    )
+
     class Meta:
         verbose_name = "Продукт"
         verbose_name_plural = "Продукты"
