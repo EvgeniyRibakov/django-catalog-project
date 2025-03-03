@@ -5,6 +5,8 @@ from django.urls import reverse_lazy, reverse
 from django.views.generic import ListView, DetailView, TemplateView, CreateView, UpdateView, DeleteView
 from catalog.forms import ProductForms, ProductModeratorForms
 from catalog.models import Product
+from catalog.services import get_products_by_category
+from django.core.cache import cache
 
 
 # Главная страница
@@ -17,10 +19,18 @@ class ContactTemplateView(TemplateView):
     template_name = 'catalog/contacts.html'
 
 
-# Просмотр списка продуктов
 class ProductListView(ListView):
     model = Product
     template_name = 'catalog/product_list.html'
+    context_object_name = 'products'
+
+    def get_queryset(self):
+        cache_key = 'product_list_all'
+        products = cache.get(cache_key)
+        if not products:
+            products = super().get_queryset()
+            cache.set(cache_key, products, timeout=60*15)  # Кэш на 15 минут
+        return products
 
 
 # Детали продукта
@@ -86,3 +96,17 @@ class ProductDeleteView(LoginRequiredMixin, DeleteView):
         if obj.owner != self.request.user:
             raise PermissionDenied("Вы не можете удалить этот продукт.")
         return obj
+
+
+class ProductByCategoryListView(ListView):
+    template_name = 'products_list.html'
+    context_object_name = 'products'
+
+    def get_queryset(self):
+        category_name = self.kwargs['category']
+        return get_products_by_category(category_name)
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['category'] = self.kwargs['category']
+        return context

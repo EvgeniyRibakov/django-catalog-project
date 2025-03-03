@@ -14,3 +14,13 @@ def get_products_from_cache():
     products = Product.objects.all()
     cache.set(key, products)
     return products
+
+
+def get_products_by_category(category_name):
+    """Возвращает список продуктов в указанной категории."""
+    cache_key = f"products_category_{category_name}"
+    products = cache.get(cache_key)
+    if not products:
+        products = Product.objects.filter(category=category_name)
+        cache.set(cache_key, products, timeout=60 * 15)  # Кэш на 15 минут
+    return products
